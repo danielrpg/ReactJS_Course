@@ -20,8 +20,16 @@
         <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
         <script type="text/babel">
-            const Header = <h1> Hello David how are you? </h1>
-            ReactDOM.render(Header, document.getElementById('app'));
+            const Clock = function() {
+
+                const date = new Date();
+
+                const thisYear = data.getFullYear();
+
+                return <h1> THIS YEAR IS: {thisYear} </h1>;
+            }
+
+            ReactDOM.render(Clock, document.getElementById('app'));
         </script>
     </body>
 </html>
