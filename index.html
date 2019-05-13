@@ -6,12 +6,15 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <style>
+            .header {
+                font-size: 49px;
+                color: red;
+            }
+        </style>
     </head>
     <body>
         <div>
-            <h1>
-                Hello Isaac
-            </h1>
             <div id="app">
                 
             </div>
@@ -21,15 +24,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
         <script type="text/babel">
             const Clock = function() {
-
                 const date = new Date();
-
-                const thisYear = data.getFullYear();
-
-                return <h1> THIS YEAR IS: {thisYear} </h1>;
+                const thisYear = date.getFullYear();
+                return <h1 className="header"> This is The Year: {thisYear} </h1>;
             }
 
-            ReactDOM.render(Clock, document.getElementById('app'));
+            ReactDOM.render(<Clock />, document.getElementById('app'));
         </script>
     </body>
 </html>
