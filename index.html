@@ -22,23 +22,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
         <script type="text/babel">
 
-            const Header = (props) => {
-                return <h1>{ props.title }</h1>
-            }
-
-            const Clock = (props) => {
-                console.log(props);
-                const date = new Date();
-                const thisYear = date.getFullYear();
-                return <h1 style={{ color: props.color }}> This is The Year: {thisYear} </h1>;
+            class Counter extends React.Component {
+                render() {
+                    return <h1>THE COUNTER COMPONENT</h1>;
+                }
             }
 
             const App = (props) => {
                 return <div>
-                    <Header title="This is the Header"/>
-                    <Clock color="red" />
-                    <Clock color="green" />
-                    <Clock color="black" />
+                    <Counter />
                 </div>;
             }
 
