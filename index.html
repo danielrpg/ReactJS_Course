@@ -24,6 +24,14 @@
 
             class Counter extends React.Component {
 
+                constructor() {
+                    super();
+
+                    this.state= {
+                        counter: 2
+                    };
+                }
+
                 handlerSubstract() {
                     console.log('substracted !!');
                 }
@@ -35,7 +43,7 @@
                 render() {
                     return <div>
                         <button onClick={this.handlerSubstract}>-</button>
-                        <span style={{ padding: '10px'}}> 9 </span>
+                        <span style={{ padding: '10px'}}> {this.state.counter} </span>
                         <button onClick={this.handlerAdd}>+</button>
                     </div>;
                 }
