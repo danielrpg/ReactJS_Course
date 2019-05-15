@@ -52,7 +52,17 @@
                 }
 
                 render() {
+                    let type;
+
+                    if(this.state.counter % 2 === 0){
+                        type = 'event';
+                    } else {
+                        type = 'odd';
+                    }
+
                     return <div>
+                        <h1>{this.state.counter % 2 === 0 ? 'event' : 'odd'}</h1>
+                        <h1>{ type }</h1>
                         <button onClick={this.handlerSubstract}>-</button>
                         <span style={{ padding: '10px'}}> {this.state.counter} </span>
                         <button onClick={this.handlerAdd}>+</button>
