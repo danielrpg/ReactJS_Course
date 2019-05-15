@@ -27,17 +27,28 @@
                 constructor() {
                     super();
 
-                    this.state= {
+                    this.state = {
                         counter: 2
                     };
+
+                    this.handlerSubstract = this.handlerSubstract.bind(this);
+                    this.handlerAdd = this.handlerAdd.bind(this);
                 }
 
                 handlerSubstract() {
-                    console.log('substracted !!');
+                    // Substract element from state
+
+                    this.setState({
+                        counter: this.state.counter - 1
+                    });
                 }
 
                 handlerAdd() {
-                    console.log('add !!');
+                    // Add element to state
+
+                    this.setState({
+                        counter: this.state.counter + 1
+                    });
                 }
 
                 render() {
