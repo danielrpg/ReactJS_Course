@@ -1,0 +1,29 @@
+{
+  "name": "course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielrpg/ReactJS_Course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielrpg/ReactJS_Course/issues"
+  },
+  "homepage": "https://github.com/danielrpg/ReactJS_Course#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  }
+}
